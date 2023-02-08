@@ -27,6 +27,7 @@ dashboard.section.buttons.val = {
   button("g", icons.ui.List .. " Live Grep", ":Telescope live_grep<cr>"),
   button("c", icons.ui.Gear .. " Config", ":edit ~/.config/nvim/init.lua<cr>"),
   button("p", icons.ui.Project .. " Projects", ":lua require('telescope').extensions.projects.projects({})<cr>"),
+  button("t", icons.ui.Project .. " Test Project", ":edit ~/projects/pets/src/index.ts<cr>"),
   button("q", icons.ui.SignOut .. " Quit", ":qa<cr>"),
 }
 

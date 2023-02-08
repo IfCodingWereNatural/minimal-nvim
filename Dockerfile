@@ -8,7 +8,7 @@ COPY bashrc /root/.bashrc
 
 FROM base
 WORKDIR /root
-COPY tsproj /root/tsproj
+COPY projects /root/projects
 COPY nvim /root/.config/nvim
 RUN nvim --headless "+Lazy! sync" +qa
 CMD ["/bin/bash"]
