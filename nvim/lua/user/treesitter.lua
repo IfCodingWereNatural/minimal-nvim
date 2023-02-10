@@ -6,4 +6,5 @@ end
 treesitter.setup({
   ensure_installed = { "lua", "typescript", "vim", "help" },
   auto_install = true,
+  log_level = vim.log.levels.WARN,
 })

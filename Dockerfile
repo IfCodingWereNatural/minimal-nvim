@@ -10,5 +10,5 @@ FROM base
 WORKDIR /root
 COPY projects /root/projects
 COPY nvim /root/.config/nvim
-RUN nvim --headless "+Lazy! sync" +qa
+RUN nvim --headless +"Lazy! sync" +"sleep 5" +qa
 CMD ["/bin/bash"]

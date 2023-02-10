@@ -4,8 +4,15 @@ local mason_lsp_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
 local M = {}
 
 M.setup = function(servers)
+  -- skip mason setup if in headless mode
+  if next(vim.api.nvim_list_uis()) == nil then
+    return
+  end
+
   if mason_ok then
-    mason.setup()
+    mason.setup({
+      log_level = vim.log.levels.WARN,
+    })
   end
 
   if mason_lsp_ok then
