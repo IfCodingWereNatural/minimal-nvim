@@ -1,4 +1,4 @@
-local options = {
+local opts = {
   clipboard = "unnamedplus",
   cmdheight = 1,
   conceallevel = 0,
@@ -32,10 +32,19 @@ local options = {
   wrap = false,
   scrolloff = 8,
   sidescrolloff = 8,
-  shell = "/bin/bash",
+  shell = "/bin/zsh",
   hidden = true,
 }
 
-for k, v in pairs(options) do
+local global_opts = {
+  mapleader = " ",
+  maplocalleader = " ",
+}
+
+for k, v in pairs(opts) do
   vim.opt[k] = v
+end
+
+for k, v in pairs(global_opts) do
+  vim.g[k] = v
 end

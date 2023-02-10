@@ -1,13 +1,9 @@
-local servers = {
+local language_servers = {
   'tsserver',
 }
 
-local lsp_flags = {
-  debounce_text_changes = 150,
-}
-
 -- auto install language servers
-require('user.lsp.mason').setup(servers)
+require('user.lsp.mason').setup(language_servers)
 
 -- configure completions and lsp servers
-require('user.lsp.cmp').setup(servers, lsp_flags)
+require('user.lsp.cmp').setup(language_servers)

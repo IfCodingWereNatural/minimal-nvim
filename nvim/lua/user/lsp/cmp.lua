@@ -13,7 +13,7 @@ vim.opt.completeopt = 'menu,menuone,noselect'
 
 local M = {}
 
-M.setup = function(servers, flags)
+M.setup = function(servers)
   cmp.setup({
     snippet = {
       expand = function(args)
@@ -90,7 +90,6 @@ M.setup = function(servers, flags)
   for _, server in ipairs(servers) do
     lspconfig[server].setup({
       on_attach = handlers.on_attach,
-      flags = flags,
       capabilities = capabilities,
     })
   end
