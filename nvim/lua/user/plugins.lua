@@ -28,7 +28,7 @@ lazy.setup({
 
   { 'nvim-treesitter/nvim-treesitter' },
 
-  { 'ahmedkhalf/project.nvim' },
+  { 'darksinge/project.nvim' },
 
   {
     'goolord/alpha-nvim',

@@ -2,8 +2,7 @@ local telescope = require('telescope.builtin')
 
 local M = {}
 
-M.on_attach = function(client, bufnr)
-  vim.notify('running on_attach for ' .. client.name)
+M.on_attach = function(_, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
 
   -- Enable completion triggered by <c-x><c-o>
