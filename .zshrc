@@ -1,3 +1,5 @@
 alias ll="ls -l"
 alias la="ls -la"
-alias vim="nvim"
+alias vim="lvim"
+
+export PATH="/root/.local/bin:/root/.cargo/bin:$PATH"
