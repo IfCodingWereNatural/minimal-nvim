@@ -13,7 +13,7 @@ local ikeymap = function(from, to, opts)
   keymap("i", from, to, opts)
 end
 
-nkeymap("zs", ":lua require'telescope.builtin'.spell_suggest()<cr>", "suggest spelling")
+nkeymap("zs", ":lua require'telescope.builtin'.spell_suggest()<cr>")
 
 -- these are totally unnecessary (except the last one)
 ikeymap("<C-o>l", "<C-k>->")
