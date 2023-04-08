@@ -18,15 +18,25 @@ You'll need to have Docker installed on your local machine to build and run the 
 
 ### Building the Container
 
-To build the Docker container, run `./build.sh`. This script will build the
-container and tag it with the name `minimal-nvim`.
+Use `./build.sh` to create the Docker image or just run the following command:
+
+```bash
+~$ docker build -t minimal-nvim .
+```
+
+This script will build the container and tag it with the name `minimal-nvim`.
 
 ### Running the Container
 
-There is a helper `run.sh` script to start up the container. This script will
-run the container and mount the `nvim/` directory as a volume, so any changes
-you make to the files in `/root/.config/nvim` while in the container, will also
-change the local files.
+There is a helper script to start up the container.
+
+```bash
+~$ ./run.sh
+```
+
+This script will run the container and mount the `nvim/` directory as a volume,
+so any changes you make to the files in `/root/.config/nvim` while in the
+container, will also change the local files.
 
 ## NeoVim Configuration
 
