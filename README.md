@@ -40,7 +40,7 @@ container, will also change the local files.
 
 ## NeoVim Configuration
 
-The configuration includes the following plugins:
+The configuration includes the following plugins (and perhaps more, I dunno, I had chatgpt generate this readme):
 
 - `lazy.nvim` plugin manager
 - `plenary.nvim` for utility functions
