@@ -14,6 +14,7 @@ lvim.lsp.buffer_mappings.normal_mode["gr"] = {
 
 lvim.lsp.buffer_mappings.normal_mode["gd"] = {
   ":lua vim.lsp.buf.definition()<cr>",
+  -- ":lua require'telescope.builtin'.lsp_definitions()<cr>",
   kind.cmp_kind.Reference .. " Definitions"
 }
 

@@ -1,5 +1,3 @@
--- see :h map-modes
-
 local default_opts = { noremap = true, silent = true }
 
 local keymap = function(mode, from, to, opts)
@@ -15,9 +13,7 @@ local ikeymap = function(from, to, opts)
   keymap("i", from, to, opts)
 end
 
-nkeymap("gF", ":lua print(vim.fn.expand('%'))<cr>")
--- nkeymap("gd", ":lua require('telescope.builtin').lsp_definitions()<cr>")
-nkeymap("zs", ":lua require'telescope.builtin'.spell_suggest()<cr>")
+nkeymap("zs", ":lua require'telescope.builtin'.spell_suggest()<cr>", "suggest spelling")
 
 -- these are totally unnecessary (except the last one)
 ikeymap("<C-o>l", "<C-k>->")

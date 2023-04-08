@@ -5,9 +5,5 @@ export interface Walkable {
 
 export class WalkError extends Error {
   readonly code = 'WalkError'
-  constructor(message: string) {
-    super(`WalkError: ${message}`)
-  }
 }
-
 

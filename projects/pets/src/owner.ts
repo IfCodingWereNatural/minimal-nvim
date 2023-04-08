@@ -1,6 +1,6 @@
 import { Dog } from "./dog"
 import { Pet } from "./pet"
-import { WalkError } from "./types"
+import { WalkError } from "./walkable"
 
 export class Owner {
   private _pets: Pet[] = []

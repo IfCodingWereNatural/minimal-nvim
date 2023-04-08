@@ -1,5 +1,5 @@
 import { Pet } from './pet';
-import { Walkable, WalkError } from './types';
+import { Walkable, WalkError } from './walkable';
 
 export class Dog extends Pet implements Walkable {
   leashEquipped = false

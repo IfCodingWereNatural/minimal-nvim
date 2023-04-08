@@ -4,15 +4,14 @@ local wk = lvim.builtin.which_key
 
 wk.mappings["a"] = { ":Alpha<cr>", kind.icons.screen .. " Dashboard" }
 
--- folke/persistence.nvim
 wk.mappings["S"] = {
-  name = "Session",
+  name = " persistence.nvim",
   s = { "<cmd>lua require('persistence').load()<cr>", kind.icons.clock .. " Reload last session for dir" },
   l = { "<cmd>lua require('persistence').load({ last = true })<cr>", kind.icons.clock .. " Restore last session" },
   Q = { "<cmd>lua require('persistence').stop()<cr>", kind.icons.exit .. " Quit without saving session" },
 }
 
-wk.mappings["l"]["F"] = { ":LvimToggleFormatOnSave<cr>", kind.symbols_outline.File .. " Toggle format on save" }
+wk.mappings["l"]["t"] = { ":LvimToggleFormatOnSave<cr>", kind.symbols_outline.File .. " Toggle format-on-save" }
 wk.mappings["l"]["R"] = { ":LspRestart<cr>", kind.icons.exit .. " Restart" }
 
 wk.mappings["s"]["w"] = {
