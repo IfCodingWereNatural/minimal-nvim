@@ -42,6 +42,7 @@ container, will also change the local files.
 
 The configuration includes the following plugins:
 
+- `lazy.nvim` plugin manager
 - `plenary.nvim` for utility functions
 - `mason-lspconfig.nvim` and `mason.nvim` for project management and LSP support
 - `nvim-lspconfig` for LSP support
