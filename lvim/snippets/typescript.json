@@ -1,0 +1,12 @@
+{
+  "named-arrow-function": {
+    "prefix": "caf",
+    "body": "const ${1:functionName} = (${2:arg}): ${3:returnType} => {\n  ${4}\n}",
+    "description": "Create a named arrow function"
+  },
+  "named-function": {
+    "prefix": "cnf",
+    "body": "function ${1:functionName}(${2:arg}) {\n  ${3}\n}",
+    "description": "Create a named function"
+  }
+}
