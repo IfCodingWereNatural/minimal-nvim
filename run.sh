@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-docker rm nvim 2&> /dev/null
+docker rm lvim 2&> /dev/null
 docker run -it \
-  --name nvim \
+  --name lvim \
   --mount type=bind,source="$(pwd)/nvim",target=/root/.config/nvim \
-  minimal-nvim
+  lvim

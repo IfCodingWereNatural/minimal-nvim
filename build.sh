@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker build -t minimal-nvim .
+docker build -t lvim .
